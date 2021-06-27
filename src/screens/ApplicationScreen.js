@@ -13,12 +13,7 @@ import Routes from "../Routes";
 // components
 import Navbar from "../components/Navbar";
 
-//providers
-import { UserContext } from "../providers/UserProvider";
-import AccountScreen from "./AccountScreen";
-
 function ApplicationScreen() {
-  const user = useContext(UserContext);
   return (
     <Router>
       <Navbar />
