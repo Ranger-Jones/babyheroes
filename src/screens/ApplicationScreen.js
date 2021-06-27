@@ -4,9 +4,6 @@ import "../App.css";
 // router
 import { BrowserRouter as Router } from "react-router-dom";
 
-//react
-import { useContext } from "react";
-
 // routes
 import Routes from "../Routes";
 
