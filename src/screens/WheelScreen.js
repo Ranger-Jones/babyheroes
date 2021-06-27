@@ -29,7 +29,7 @@ const WheelScreen = () => {
   };
 
   return (
-    <div className="content">
+    <div className="content shop-page">
       <div className="l-main-page">
         <div className="l-main">
           <WheelComponent

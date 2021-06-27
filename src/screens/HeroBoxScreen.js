@@ -8,8 +8,7 @@ import Card from "../components/Card";
 import "./screens.scss";
 
 export default function HeroBoxScreen() {
-  const img =
-    "https://www.item24.de/fileadmin/_processed_/8/0/csm_1.alu-konstruktionsprofil-mb-systembaukasten-item_e6e23f2009.jpg";
+  const img = "https://i.postimg.cc/wjydwmFs/IMG-20180618-114434.png";
   return (
     <div class="content shop-page">
       <div className="l-main-page">

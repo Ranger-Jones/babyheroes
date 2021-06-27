@@ -7,8 +7,14 @@
 
 .main-page{
     
-    @media (min-width: 700px){
+    @media (max-width: 600px){
         padding-top: 6rem;
+    }
+    @media (min-width: 601px){
+        padding-top: 6rem;
+    }
+    @media (min-width: 800px){
+        padding-top: 9rem;
     }
     @media (min-width: 1200px){
         padding-top: 8rem;
@@ -25,7 +31,7 @@
 }
 
 .shop-page{
-    background-color: #fff983;
+    /*background-color: #fff983;*/
     @media (min-width: 700px){
         padding-top: 3rem;
     }

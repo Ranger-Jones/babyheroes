@@ -20,7 +20,7 @@ export default function HomeScreen() {
         </div>
         <div className="l-main-page">
           <div className="l-main">
-            <TypingText text="Jonathan ist ein Hurensohn" />
+            <TypingText text="Alles für ihr ein und alles" />
           </div>
         </div>
         <div className="l-button-row">

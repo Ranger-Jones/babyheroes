@@ -1,21 +1,15 @@
 // styles
 import "./App.css";
 
-// router
-import { BrowserRouter as Router } from "react-router-dom";
-
-// routes
-import Routes from "./Routes";
-
-// components
-import Navbar from "./components/Navbar";
+// providers
+import UserProvider from "./providers/UserProvider.jsx";
+import ApplicationScreen from "./screens/ApplicationScreen";
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-        <Routes />
-    </Router>
+    <UserProvider>
+      <ApplicationScreen />
+    </UserProvider>
   );
 }
 

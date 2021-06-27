@@ -1,18 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato&family=Noto+Sans+JP&family=Open+Sans:wght@600&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
+@import url('https://rsms.me/inter/inter.css');
 :root {
     font-size: 16px;
     font-family: 'Open Sans';
     --text-primary: #eeef20;
     --text-secondary: #dddf00;
-    --bg-primary: #80b918;
+    --text-yellow: #FDE541;
+    --bg-primary: #86b82a;
     --bg-secondary: #55a630;
     --scroll-track: #316d15;
     --bg-color: #EDE11B;
     --text-normal: #333533;
+    --text-light: #f5f6fa;
     --transition-speed: 600ms;
-    --surface-color: #fff;
+    --surface-color: #d5f895;
+    --google-color: #e17055;
     --curve: 40;
+
+    
+    --size-bezel: .5rem;
+    --size-radius: 4px;
 }
 
 body {
@@ -95,8 +103,12 @@ body {
         }
     }
 
-    @media (min-width:700px){
+    @media (max-width:600px){
         
+    }
+    @media (min-width:601px){
+        padding-left: 9rem;
+        width: 70rem;
     }
     @media (min-width:1000px){
         padding-left: 8rem;
@@ -118,7 +130,7 @@ body {
     
     .l-main {
         padding-top: 1rem;
-        @media (min-width: 700px) {
+        @media (max-width: 600px) {
             width: 100%;
             margin-top: 0;
             float: left;
@@ -185,10 +197,14 @@ body {
 }
 
 .l-button-row{
+    @include clearfix;
     align-items: center;
     justify-content:between;
-    @media (min-width:700px){
+    @media (max-width:600px){
         
+    }
+    @media (min-width:601px){
+        padding-left: 9rem;
     }
     @media (min-width:1000px){
         padding-left: 17rem;
@@ -211,6 +227,36 @@ body {
         width: percentage(1/3);
         float: left;
     }
+}
+
+.l-account-page {
+    width: 80rem;
+    @include clearfix;
+    .l-overview{
+        width: 100%;
+        float: left;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .l-notification{
+        width: percentage(1/5);
+        float: left;
+    }
+
+    .l-content{
+        width: percentage(3/5);
+        float: left;
+    }
+
+    .l-news{
+        width: percentage(1/5);
+        float: left;
+    }
+
+
 }
   
   /* Demo purposes */

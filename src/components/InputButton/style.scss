@@ -1,0 +1,28 @@
+  
+  button {
+
+    padding: var(--size-bezel) calc(var(--size-bezel) * 2);
+    background: var(--text-yellow);
+    border: none;
+    border-radius: var(--size-radius);
+    font-weight: 900;
+    text-decoration: none;
+    cursor: pointer;
+    
+    &[type=reset]{
+      background: var(--text-normal);
+      color: var(--text-light);
+      font-weight: 200;
+    } 
+    &[type=google]{
+        background: var(--google-color);
+      } 
+      &[type=login]{
+        color: var(--text-normal);
+
+      } 
+  }
+  
+  button + button {
+    margin-left: calc(var(--size-bezel) * 2);
+  }

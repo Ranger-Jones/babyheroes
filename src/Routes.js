@@ -11,6 +11,9 @@ import AttributionScreen from "./screens/AttributionScreen";
 import LayoutScreen from "./screens/LayoutScreen";
 import ShoppingScreen from "./screens/ShoppingScreen";
 import AccountScreen from "./screens/AccountScreen";
+import SignUpScreen from "./screens/SignUpScreen";
+import SignInScreen from "./screens/SignInScreen";
+import PasswordResetScreen from "./screens/PasswordResetScreen";
 
 const Routes = () => {
   return (
@@ -24,6 +27,9 @@ const Routes = () => {
       <Route path="/layout" component={LayoutScreen} />
       <Route path="/items" component={ShoppingScreen} />
       <Route path="/account" component={AccountScreen} />
+      <Route path="/signin" component={SignInScreen} />
+      <Route path="/signup" component={SignUpScreen} />
+      <Route path="/passwordreset" component={PasswordResetScreen} />
     </Switch>
   );
 };
